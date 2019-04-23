@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <TextView
+        android:fontFamily="@font/psb"
+        android:id="@+id/WelcomeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_welcome"
+        android:textSize="16sp"
+        android:padding="8sp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/Hey"
+        android:background="#0D47A1"
+       />
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/Hey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:padding="8sp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="@string/Hi"
+            android:background="#00ACC1"
+            />
+
+    <EditText
+        android:fontFamily="@font/psb"
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username_text"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_marginLeft="10sp"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_above="@+id/Password"
+        android:inputType="text"
+        android:paddingStart="5sp"
+        android:paddingEnd="5sp"
+        android:drawableEnd="@drawable/ic_person_white_24dp"
+        android:layout_marginBottom="20sp"
+        />
+
+        <EditText
+            android:fontFamily="@font/psb"
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:drawableEnd="@drawable/ic_vpn_key_blue_24dp"
+            android:hint="@string/password_text"
+            android:inputType="textWebPassword"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingBottom="10sp"
+            android:paddingEnd="5sp"
+            android:paddingStart="5sp"
+            android:paddingTop="10sp"
+            android:singleLine="false"
+            android:textSize="18sp"
+            />
+
+    <Button
+        android:fontFamily="@font/psb"
+        android:id="@+id/SignIn_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_text"
+        android:background="#0D47A1"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

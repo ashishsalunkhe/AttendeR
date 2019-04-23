@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">AttendeR</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="register_text">Register</string>
+    <string name="username_text">Student ID</string>
+    <string name="password_text">Password</string>
+    <string name="app_welcome_text">Welcome To AttendeR</string>
+    <string name="sign_in_welcome">Welcome Back</string>
+    <string name="app_welcome_sub">Sign In To Explore More</string>
+    <string name="student_info_welcome">Student Information</string>
+    <string name="personal_info_welcome">Personal Information</string>
+    <string name="register_info_welcome">Registration Information</string>
+    <string name="roll_no_text">Roll No</string>
+    <string name="roll_no_description">Example : 57</string>
+    <string name="branch_text">Branch</string>
+    <string name="year_text">Year</string>
+    <string name="division_text">Division</string>
+    <string name="next_text">Next</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_text">Email</string>
+    <string name="logo_description">App Logo</string>
+    <string name="Scan_QR">Scan QR Code</string>
+    <string name="Scan_description">Scan QR Logo</string>
+    <string name="fun">The Developers Forgot to Fill this Empty Space</string>
+    <string name="Hello">Hello !</string>
+    <string name="Hi">Hi !</string>
+    <string name="Logout">Logout</string>
+    <string name="Step_One">Step 1</string>
+    <string name="Step_Two">Step 2</string>
+    <string name="Step_Three">Step 3</string>
+    <string name="user_replace">User</string>
+    <string name="example">Student ID Example : T31509</string>
+
+    <string-array name="year">
+        <item>FE</item>
+        <item>SE</item>
+        <item>TE</item>
+        <item>BE</item>
+    </string-array>
+    <string-array name="branch">
+        <item>FirstYear</item>
+        <item>CivilEngineering</item>
+        <item>ComputerEngineering</item>
+        <item>Electronics&amp;TelecommunicationEngineering</item>
+        <item>MechanicalEngineering</item>
+    </string-array>
+    <string-array name="division">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
+</resources>

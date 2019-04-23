@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/LoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="25dp">
+
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/WelcomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/app_welcome_text"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/WelcomeSubText"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/psb"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WelcomeTextView"
+            android:text="@string/app_welcome_sub"
+            android:textAlignment="center"
+            android:textColor="#00ACC1" />
+
+        <ImageView
+            android:id="@+id/AppLogo"
+            android:layout_width="286dp"
+            android:layout_height="349dp"
+            android:layout_above="@+id/SignIn_Button"
+            android:layout_below="@id/WelcomeSubText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/logo_description"
+            android:src="@drawable/qrs" />
+
+        <Button
+            android:fontFamily="@font/psb"
+            android:id="@+id/SignInButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/RegisterButton"
+            android:background="#1E88E5"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="@string/sign_in_text"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:fontFamily="@font/psb"
+            android:id="@+id/RegisterButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#0D47A1"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="@string/register_text"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

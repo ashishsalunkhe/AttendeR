@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/StudentInfoWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/Step_One"
+            android:background="#0D47A1"
+            android:padding="8sp"
+            android:text="@string/student_info_welcome"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/psb"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/RollNoText"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/YearText"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:fontFamily="@font/psb"
+            android:paddingBottom="10sp"
+            android:text="@string/roll_no_text"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/RollNoEdit"
+            android:fontFamily="@font/psb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/YearSpinner"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:layout_toEndOf="@+id/RollNoText"
+            android:hint="@string/roll_no_description"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/Step_One"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#00ACC1"
+            android:padding="8sp"
+            android:text="@string/Step_One"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/YearText"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BranchText"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:text="@string/year_text"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:fontFamily="@font/psb"
+            android:id="@+id/YearSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/BranchSpinner"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:layout_toEndOf="@+id/YearText"></Spinner>
+
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/BranchText"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:text="@string/branch_text"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:fontFamily="@font/psb"
+            android:id="@+id/BranchSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:layout_toEndOf="@+id/BranchText"></Spinner>
+
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/DivisionText"
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BranchText"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:text="@string/division_text"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:fontFamily="@font/psb"
+            android:id="@+id/DivisionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BranchSpinner"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="10sp"
+            android:layout_toEndOf="@+id/DivisionText"></Spinner>
+
+        <Button
+            android:fontFamily="@font/psb"
+            android:id="@+id/NextButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#0D47A1"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:text="@string/next_text"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

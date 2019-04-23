@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRScanner">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Hello"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:background="#00ACC1"
+            android:padding="8sp"
+            android:textColor="#ffffff"
+            />
+
+        <ImageView
+            android:id="@+id/Start_Logo"
+            android:layout_below="@+id/User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start_logo"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:fontFamily="@font/psb"
+            android:id="@+id/User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/Hello"
+            android:textAlignment="center"
+            android:padding="8sp"
+            android:background="#0D47A1"
+            android:text="@string/user_replace"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        <Button
+            android:fontFamily="@font/psb"
+            android:id="@+id/ScanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Scan_QR"
+            android:paddingStart="12sp"
+            android:textAlignment="center"
+            android:paddingEnd="12sp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:background="#0D47A1"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
