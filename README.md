@@ -1,5 +1,5 @@
 # AttendeR
-Android Application for QR-based attendance </br>
+**Android Application for QR-based attendance** </br>
 In this system, the attendance record and maintenance work is done on digital
 platform. Initially, the students have to login through the AttendeR app to access the service
 from their smartphones. After the lecture, the teacher have to generate a dynamic QR code
